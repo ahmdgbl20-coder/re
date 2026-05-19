@@ -8,14 +8,13 @@
     
     <style>
         :root {
-            /* درجات ألوان مطابقة للصورة الفاخرة */
-            --bg-gradient-top: #422d25; /* بني دافئ عميق */
-            --bg-gradient-bottom: #1c120e; /* بني داكن جداً يقترب من الأسود */
-            --card-bg: #ffffff; /* أبيض ناصع كما في الصورة */
-            --text-main: #2b1d19; /* بني داكن جداً للنصوص */
-            --text-muted: #6d5146; /* بني متوسط للوصف */
-            --gold-accent: #b78628; /* ذهبي ملكي للخطوط والزخارف */
-            --gold-bright: #d4af37; /* ذهبي لامع للأزرار */
+            --bg-gradient-top: #422d25;
+            --bg-gradient-bottom: #1c120e;
+            --card-bg: #ffffff;
+            --text-main: #2b1d19;
+            --text-muted: #6d5146;
+            --gold-accent: #b78628;
+            --gold-bright: #d4af37;
         }
 
         * {
@@ -26,9 +25,8 @@
         }
 
         body {
-            /* كود الزخرفة المطور: يدمج النجمة الثمانية والهلال بنمط خطي ذهبي مفرغ وموزع باحترافية على كامل الخلفية */
             background-image: 
-                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cg fill='none' stroke='%23b78628' stroke-width='0.6' stroke-opacity='0.25'%3E%3C!-- النجمة الإسلامية الكبيرة --%3E%3Cpath d='M40 10 l12 12 H72 v20 l12 12 l-12 12 v20 H52 l-12 12 l-12 -12 H10 v-20 l-12 -12 l12 -12 v-20 h20 z'/%3E%3Cpath d='M40 15 l9.5 9.5 H65 v21 l9.5 9.5 l-9.5 9.5 v21 H49.5 l-9.5 9.5 l-9.5 -9.5 H15 v-21 l-9.5 -9.5 l9.5 -9.5 v-21 h20 z'/%3E%3C!-- الهلال الداخلي الفخم --%3E%3Cpath d='M44 32 a 12 12 0 1 0 0 24 a 9.5 9.5 0 1 1 0 -24' fill='%23b78628' fill-opacity='0.1' stroke='none'/%3E%3C!-- زخرفة النجمة المقابلة التناظرية --%3E%3Cpath d='M120 90 l12 12 H152 v20 l12 12 l-12 12 v20 H132 l-12 12 l-12 -12 H90 v-20 l-12 -12 l12 -12 v-20 h20 z'/%3E%3Cpath d='M120 95 l9.5 9.5 H145 v21 l9.5 9.5 l-9.5 9.5 v21 H129.5 l-9.5 9.5 l-9.5 -9.5 H95 v-21 l-9.5 -9.5 l9.5 -9.5 v-21 h20 z'/%3E%3Cpath d='M124 112 a 12 12 0 1 0 0 24 a 9.5 9.5 0 1 1 0 -24' fill='%23b78628' fill-opacity='0.1' stroke='none'/%3E%3C/g%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cg fill='none' stroke='%23b78628' stroke-width='0.6' stroke-opacity='0.25'%3E%3Cpath d='M40 10 l12 12 H72 v20 l12 12 l-12 12 v20 H52 l-12 12 l-12 -12 H10 v-20 l-12 -12 l12 -12 v-20 h20 z'/%3E%3Cpath d='M40 15 l9.5 9.5 H65 v21 l9.5 9.5 l-9.5 9.5 v21 H49.5 l-9.5 9.5 l-9.5 -9.5 H15 v-21 l-9.5 -9.5 l9.5 -9.5 v-21 h20 z'/%3E%3Cpath d='M44 32 a 12 12 0 1 0 0 24 a 9.5 9.5 0 1 1 0 -24' fill='%23b78628' fill-opacity='0.1' stroke='none'/%3E%3Cpath d='M120 90 l12 12 H152 v20 l12 12 l-12 12 v20 H132 l-12 12 l-12 -12 H90 v-20 l-12 -12 l12 -12 v-20 h20 z'/%3E%3Cpath d='M120 95 l9.5 9.5 H145 v21 l9.5 9.5 l-9.5 9.5 v21 H129.5 l-9.5 9.5 l-9.5 -9.5 H95 v-21 l-9.5 -9.5 l9.5 -9.5 v-21 h20 z'/%3E%3Cpath d='M124 112 a 12 12 0 1 0 0 24 a 9.5 9.5 0 1 1 0 -24' fill='%23b78628' fill-opacity='0.1' stroke='none'/%3E%3C/g%3E%3C/svg%3E"),
                 linear-gradient(135deg, var(--bg-gradient-top) 0%, var(--bg-gradient-bottom) 100%);
             background-attachment: fixed;
             background-size: 200px 200px, 100% 100%;
@@ -39,7 +37,6 @@
             overflow-x: hidden;
         }
 
-        /* --- العلامة المائية التلقائية اللطيفة --- */
         @keyframes fadeInOut {
             0%, 100% { opacity: 0; }
             10%, 90% { opacity: 0.12; }
@@ -70,7 +67,6 @@
             z-index: 1;
         }
 
-        /* رأس الصفحة (الهيدر) المطور والأنيق */
         header {
             text-align: center;
             margin-bottom: 60px;
@@ -95,7 +91,6 @@
             font-weight: 400;
         }
 
-        /* شبكة عرض البطاقات (تنسيق شبكي متجاوب ومريح للعين) */
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
@@ -113,14 +108,13 @@
             }
         }
 
-        /* تصميم البطاقات المطابق للصورة الفاخرة */
         .card {
             background: var(--card-bg);
             border-radius: 12px;
             box-shadow: 0 15px 35px rgba(0,0,0,0.4);
             padding: 40px;
             display: flex;
-            flex-direction: row; /* توزيع المحتوى والشعار بشكل أفقي كما بالصورة */
+            flex-direction: row;
             align-items: center;
             justify-content: space-between;
             gap: 20px;
@@ -158,7 +152,6 @@
             line-height: 1.7;
         }
 
-        /* النجمة والهلال المدمجة داخل البطاقة يساراً وبدقة متناهية */
         .card-icon {
             width: 90px;
             height: 90px;
@@ -169,14 +162,13 @@
             background-position: center;
         }
 
-        /* أزرار الروابط التفاعلية الأنيقة والمطابقة للصورة */
         .btn-link {
             align-self: flex-start;
             background: linear-gradient(135deg, #422d25 0%, #2b1d19 100%);
             color: #e5c07b;
             text-decoration: none;
             padding: 12px 28px;
-            border-radius: 6px; /* زوايا حادة ناعمة ومطابقة تماماً للصورة */
+            border-radius: 6px;
             font-weight: 700;
             font-size: 0.95rem;
             transition: all 0.3s ease;
@@ -191,7 +183,6 @@
             transform: scale(1.03);
         }
 
-        /* التذييل / الفوتر */
         footer {
             text-align: center;
             margin-top: 80px;
@@ -235,9 +226,9 @@
 
             <div class="card">
                 <div class="card-content">
-                    <h3>ضرب رقمين × ٣ أرقام</h3>
+                    <h3>ضرب رقمين × ٣ أرقام (أرقام عربية وإنجليزية)</h3>
                     <p>تحديات متقدمة لتطبيق خطوات الضرب المطول بدقة وسرعة للحصول على النواتج النهائية الصحيحة.</p>
-                    <a href="https://mhsab399-bit.github.io/qq/" target="_blank" class="btn-link">ابدأ الاختبار الآن ←</a>
+                    <a href="https://ahmdgbl-prog.github.io/ddrrbb/" target="_blank" class="btn-link">ابدأ الاختبار الآن ←</a>
                 </div>
                 <div class="card-icon"></div>
             </div>
